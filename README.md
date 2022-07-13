@@ -35,7 +35,7 @@ console.log(new ZodiacSign('1 Feb 1997 00:12:00 GMT', 'ar').chinese);
 ```
 
 ## Translation
-For the moment, the only avaible languages are English, French, Spanish and Arabic.
+For the moment, the only available languages are English, French, Spanish and Arabic.
 Fell free to participate to the translation in any other language.
 ### Available languages
 - English (en)
