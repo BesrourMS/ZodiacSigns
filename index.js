@@ -27,6 +27,15 @@ class ZodiacSign {
 			zh : ['金属', '水', '木头', '火灾', '地球']
 		}
 		
+		static yinYang = {
+			en : ['Yang', 'Yin'],
+			fr : ['Yang', 'Yin'],
+			es : ['Yang', 'Yin'],
+			ar : ['اليانغ', 'اليين'],
+			ua : ['Ян', 'Інь'],
+			zh : ['阳', '阴']
+		}
+		
 		constructor(value, lang = 'en') {
 			this.sign = ''
 			this.chinese = ''
@@ -44,7 +53,15 @@ class ZodiacSign {
 		
 		#getChineseSign(x, y){
 			let chineseDate = new Intl.DateTimeFormat('fr-TN-u-ca-chinese', {day: '2-digit', month: 'long', year:'numeric'}).format(Date.parse(x)).substring(0, 4)
-			return `${ZodiacSign.chineseElements[y][Math.floor(+chineseDate.charAt(3) / 2)]} ${ZodiacSign.chineseSigns[y][+chineseDate % 12]}`
+			
+			
+			let chineseSign = {
+				"sign" : ZodiacSign.chineseSigns[y][+chineseDate % 12],
+				"element" : ZodiacSign.chineseElements[y][Math.floor(+chineseDate.charAt(3) / 2)],
+				"yinyang" : (chineseDate % 2  == 0) ? ZodiacSign.yinYang[y][0] : ZodiacSign.yinYang[y][1]
+			}
+			
+			return chineseSign
 		}
 		
 }
