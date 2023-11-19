@@ -23,7 +23,7 @@ console.log(new ZodiacSign('1991-11-30').sign)
 ### Getting a chinese zodiac sign from a date
 
 ```js
-// Return 'Fire Rat'
+// Return {"sign": "Rat", "element": "Fire", "yinyang": "Yang"}
 console.log(new ZodiacSign('1 Feb 1997 00:12:00 GMT').chinese)
 ```
 
@@ -35,7 +35,7 @@ console.log(new ZodiacSign('1 Feb 1997 00:12:00 GMT', 'ar').chinese);
 ```
 
 ## Translation
-For the moment, the only available languages are English, French, Spanish, Arabic, Ukrainian and Chinese.
+For the moment, the only available languages are English, French, Spanish, Arabic, Ukrainian, Chinese, Turkish and Japanese.
 Fell free to participate to the translation in any other language.
 ### Available languages
 - English   (en)
@@ -44,3 +44,5 @@ Fell free to participate to the translation in any other language.
 - Arabic    (ar)
 - Ukrainian (ua)
 - Chinese   (zh)
+- Turkish   (tr)
+- Japanese  (ja)
