@@ -46,3 +46,4 @@ Fell free to participate to the translation in any other language.
 - Chinese   (zh)
 - Turkish   (tr)
 - Japanese  (ja)
+- Indonesian (id)
