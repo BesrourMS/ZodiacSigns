@@ -3,7 +3,7 @@
  */
 export class ZodiacSign {
     private sign: string;
-    private chinese: string;
+    private chinese: any;
     /**
      * Signs for different languages.
      * @example
@@ -102,7 +102,7 @@ export class ZodiacSign {
         let chineseSign = {
             sign: ZodiacSign.chineseSigns[y][+chineseDate % 12],
             element: ZodiacSign.chineseElements[y][Math.floor(+chineseDate.charAt(3) / 2)],
-            yinyang: chineseDate % 2 == 0 ? ZodiacSign.yinYang[y][0] : ZodiacSign.yinYang[y][1]
+            yinyang: parseInt(chineseDate) % 2 == 0 ? ZodiacSign.yinYang[y][0] : ZodiacSign.yinYang[y][1]
         };
 
         return chineseSign;
