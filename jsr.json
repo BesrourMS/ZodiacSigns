@@ -1,6 +1,6 @@
 {
   "name": "@besrourms/zodiacsigns",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A TypeScript class representing Zodiac signs with associated information, including names in multiple languages, Chinese zodiac signs, elements, and Yin-Yang attributes.",
   "exports": "./mod.ts"
 }
