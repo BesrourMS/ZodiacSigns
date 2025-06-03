@@ -1,7 +1,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/besrourms/ZodiacSigns/blob/main/LICENSE)
 [![](https://data.jsdelivr.com/v1/package/gh/besrourms/ZodiacSigns/badge)](https://www.jsdelivr.com/package/gh/besrourms/ZodiacSigns)
 [![JSR](https://jsr.io/badges/@besrourms/zodiacsigns)](https://jsr.io/@besrourms/zodiacsigns)
-
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/BesrourMS/ZodiacSigns)
 
 # Zodiac Signs / Chinese Zodiac Signs
 
